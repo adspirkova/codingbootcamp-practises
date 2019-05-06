@@ -1,0 +1,76 @@
+/* Inserted fond at the top */
+@font-face {
+    font-family: 'FromtheWoods';
+    src: url('img/FromtheWoods.woff2') format('woff2');
+  }
+*  {
+    box-sizing: border-box;
+}
+{}
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+body {
+    margin: 0;
+    height: 100vh;
+    padding: 1rem;
+    background-color: #D3D3D3;
+    text-align: center;
+}
+.body {
+    /* overflow: hidden;*/ 
+    /* scrolling down with same picture as background */
+    background-attachment: fixed; 
+    background-image: url('img/bg.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover; /* fills full picture */
+    padding: 1rem;
+    height: 100%; /* always full page */
+}
+
+.container {
+    width: 40em; /* em=set pxs */
+    margin: 0 auto; /* centers objects */
+    padding: 3rem 0rem 3rem 0rem;
+  }
+  
+footer {
+    background-color:#2D4823;
+    padding:  1rem;
+    
+}
+
+.circle {
+    background-color: #4F6A13;
+    border-radius: 120%;
+    text-align: center;
+    padding: 3rem;
+    max-width: 22rem; 
+    max-height: 28rem;
+    position: absolute; /* Shifts from relative position by left, top, bottom, right*/
+} 
+#tent {
+    left: 40em;
+    top: 20em;
+}
+#cell {
+    left: 80em;
+    top: 40em;
+}
+#community {
+    left: 40em;
+    top: 60em;
+}
+h1 {
+    font-family: 'FromtheWoods', helvetica;
+    font-size: 7rem;
+    font-weight: 800;
+    width: 18rem; /* zalomuje text */
+    display: inline;
+}
+p {
+    font-display: bold;
+    max-width: 40rem;
+}

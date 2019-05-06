@@ -1,0 +1,27 @@
+/* Select all by * */
+*  {
+    box-sizing: border-box;
+}
+{}
+html {
+    font-family: sans-serif;
+    font-size: 18px; /* 90 divided by 15 */
+}
+body {
+    margin: 0;
+    background-image: url('grid.png'); 
+}
+.box {
+    display: block; /* as wide as possible and as short as possible */
+    /* height: 18px; for content-box will work */
+    max-width: 20rem; /* max-width or width 
+    width: 10rem; */
+    /* height: 5.25rem; */
+    max-height: 20rem;
+    /* overflow: hidden; hiddes overflowing - useful to not overlaping another element */
+    background-color: magenta;
+    padding: 1rem; 
+    margin: 1rem;
+    border: 1px solid black;
+}
+

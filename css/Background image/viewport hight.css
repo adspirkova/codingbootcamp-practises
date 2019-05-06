@@ -1,0 +1,24 @@
+/* Setting up a nav bar to left */
+
+*  {
+    box-sizing: border-box;
+}
+{}
+html {
+    font-family: sans-serif;
+    font-size: 18px; /* 90 divided by 15 */
+}
+body {
+    margin: 0;
+    background-image: url('grid.png'); 
+    border: 2px solid black;
+    height: 100vw; /* Because of this  */
+}
+.box {
+    display: block; /* as wide as possible and as short as possible */
+    background-color: magenta;
+    width: 8rem;
+    height: 100%;  /* and this */
+    padding: 1rem; 
+    
+}

@@ -1,0 +1,28 @@
+*  {
+    box-sizing: border-box;
+}
+{}
+html {
+    font-family: sans-serif;
+    font-size: 18px; /* 90 divided by 15 */
+}
+body {
+    margin: 0;
+    background-image: url('grid.png'); 
+    border: 2px solid black;
+    height: 16rem;
+}
+.box {
+    display: block; /* as wide as possible and as short as possible */
+    position: relative; /* Shifts from relative position by left, top, bottom, right*/
+    left: 2rem;
+    background-color: magenta;
+    width: 20rem;
+    height: 4rem;
+    padding: 1rem; 
+    margin: 1rem auto;
+}
+
+.abs {
+    position: absolute;
+}
