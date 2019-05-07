@@ -1,0 +1,35 @@
+.scorecontainer {
+    padding: 2em;
+    background-color: aqua;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-content: flex-start;
+    align-items: center;
+}
+
+.score {
+    border: 2px solid grey;
+    
+    
+}
+
+.scoreban {
+    height: 800px;
+    width: 300px;
+    border: 2px solid grey;
+    background-color: grey;
+    flex-grow: 1;
+}
+
+.lmbd {
+    height: 0.7rem;
+}
+
+.rotten {
+    height: 0.9rem;
+}
+
+.meta {
+    height: 0.8rem;
+}

@@ -1,0 +1,45 @@
+@import 'variables.scss';
+@import 'navigation.scss';
+@import 'content.scss';
+@import 'banner.scss';
+@import 'pagename.scss';
+@import 'poster_page.scss';
+@import 'characters_page.scss';
+@import 'charactersavatar.scss';
+@import 'ratings_page.scss';
+@import 'cast_page.scss';
+@import 'gallery_page.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    background-color: #a6a6a8d3;
+    font-weight: 300;
+
+
+}
+body {
+    color: black;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+h1 {
+    color: black;
+    font-weight: 400;
+    font-size: 2em;
+    margin: 0;
+}
+
+h3 {
+    color:#8f8e8e;
+    font-weight: 400;
+    font-size: 1em;
+    margin: 0;
+}
+

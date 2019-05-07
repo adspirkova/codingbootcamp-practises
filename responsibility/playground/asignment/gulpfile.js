@@ -9,7 +9,6 @@ const csso = require('gulp-csso');
 const sourcemaps = require('gulp-sourcemaps');
 const fs   = require('fs');
  
-
 // creates default src folder structure
 function createStructure(done) {
     const folders = [
