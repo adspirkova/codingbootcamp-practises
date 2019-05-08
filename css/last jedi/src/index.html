@@ -1,190 +1,203 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The last jedi</title>
+
     <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-
-    <link rel="stylesheet" href="img/fontello/css/fontello.css">
-
-    <title>The Last Jedi</title>
+    <link rel="stylesheet" href="css/fontello.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#plot">Plot</a></li>
-                <li><a href="#characters">Characters</a></li>
-                <li><a href="#ratings">Ratings</a></li>
-                <li><a href="#cast">Cast</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-            </ul>
-        </nav>
 
-    </header>
+    <nav class="top">
+        <a href="#welcome">Home</a>
+        <a href="#plot">Plot</a>
+        <a href="#characters">Characters</a>
+        <a href="#characters">Ratings</a>
+        <a href="#characters">Cast</a>
+        <a href="#characters">Gallery</a>
+    </nav>
 
-    <main>
+    <section class="welcome">
 
-        <!-- Home page -->
+        <div>
 
-        <section class="banner" id="home">
-            <div>
-                <div><h1>The Last Jedi</h1></div>
-                <div><h3>A Star Wars story</h3></div>
-            </div>
+            <h1>The Last Jedi</h1>
+            <span class="subtitle">A Star Wars story</span>
 
-        </section>
+        </div>
 
-        <!-- Plot page -->
+    </section>
 
-        <section class="plot" id="plot">
+    <section class="plot">
 
-            <div class="plotpage">
-                <div class="pagename">
-                    <h2>
-                        Plot
-                    </h2>
-                </div>
+        <h2>Plot</h2>
 
-                <div class="content">
-                    <div class="plotcontent">
-                        <div class="pagecontent">
-                            <img class="resizingposter" src="img/poster.jpg" alt="posterimg">
-                        </div>
-                        <div class="pagecontent">
-                            <div class="plottext"><h4>Darkness rises...and light to meet it.</h4></div>
-                            <div class="plottext"><p>Rey develops her newly discovered abilities with the guidance of Luke Skywalker, who is unsettled by the strength of her powers. Meanwhile, the Resistance prepares for battle with the First Order.</p></div>
-                        </div>
-                    </div>
-                </div>
+        <div>
+
+            <img src="img/poster.jpg" alt="Movie poster" class="poster">
+
+            <div class="text">
+
+                <p class="tagline">Darkness rises...and light to meet it.</p>
+
+                <p>Rey develops her newly discovered abilities with the guidance of Luke Skywalker, who is unsettled by the strength of her powers. Meanwhile, the Resistance prepares for battle with the First Order.</p>
 
             </div>
 
+        </div>
 
-        </section>
+    </section>
 
-        <!-- Characters page -->
+    <section class="characters">
 
-        <section class="characters" id="characters">
-            <div class="characterscontent">
-                <div class="pagename">
-                        <div class="settop">
-                            <h2>
-                                Characters
-                            </h2>
-                        </div>
+        <h2>Characters</h2>
+
+        <div>
+            
+            <img src="img/luke.jpg" alt="">
+
+            <img src="img/leia.jpg" alt="" class="bigger">
+
+            <img src="img/finn.jpg" alt="" class="big">
+
+            <img src="img/rey.jpg" alt="" class="main">
+
+            <img src="img/kylo.jpg" alt="" class="big">
+
+            <img src="img/poe.jpg" alt="" class="bigger">
+
+            <img src="img/bb8.jpg" alt="">
+
+        </div>
+    </section>
+
+    <section class="ratings">
+
+        <h2>Ratings</h2>
+
+        <div>
+
+            <div class="rating">
+
+                <div class="percent">7.5</div>
+
+                <div class="bar" style="height: 7.5em">
+
                 </div>
 
-                <div class="content charactersavatar">
-                    <div class="setend">
-                        <div >
-                            <img class="fourthsize" src="img/luke.jpg" alt="lukepic">
-                            <img class="thirdsize" src="img/leia.jpg" alt="leiapic">
-                            <img class="secondsize" src="img/finn.jpg" alt="finnpic">
-                            <img class="firstsize"src="img/rey.jpg" alt="reypic">
-                            <img class="secondsize" src="img/kylo.jpg" alt="kylopic">
-                            <img class="thirdsize"src="img/poe.jpg" alt="poepic">
-                            <img class="fourthsize"src="img/bb8.jpg" alt="bb8pic">
-                        </div>
-                    </div>
-    
+                <div class="source">
+                    Imdb.com
                 </div>
+
             </div>
 
-        </section>
+            <div class="rating">
 
-        <!-- Ratings page -->
+                <div class="percent">90%</div>
 
-        <section class="ratings" id="ratings">
-            <div class="pagename">
-                    <h2>
-                        Ratings
-                    </h2>
+                <div class="bar" style="height: 9em">
+
                 </div>
 
-                <div class="content">
-                    <div class="scorecontainer pagecontent">
-                        <div class="score">7.5</div>
-                        <div class="scoreban lmbd"></div>
-                        <div class="scoreweb">lmbd.com</div>
-                    </div>
+                <div class="source">
+                    Rottentomatoes.com
+                </div>
+
+            </div>
+
+            <div class="rating">
+
+                <div class="percent">85%</div>
+
+                <div class="bar" style="height: 8.5em">
+
+                </div>
+
+                <div class="source">
+                    Metacritic.com
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="cast">
+
+        <h2>Cast</h2>
+
+        <div>
+
+            <div class="main">
+
+                <img src="img/hamill.jpg" alt="">
+
+                <div class="text">
+
+                    <h3>Mark Hamill</h3>
+
+                    <p>
+                        Mark Hamill is best known for his portrayal of Luke Skywalker in the original Star Wars trilogy - Star Wars (1977), Star Wars: Episode V - The Empire Strikes Back (1980), and Star Wars: Episode VI - Return of the Jedi (1983) - a role he would reprise in Star Wars: The Force Awakens (2015). Hamill also starred and co-starred in the films Corvette Summer (1978), Big Red One (1980), and Kingsman: The Secret Service (2014). Hamill's extensive voice acting work includes a long-standing role as the Joker, commencing with Batman (1992).
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="others">
+
+                <div class="person">
+                    <img src="img/fisher.jpg" alt="">
+                    <div class="name">Carrie Fisher</div>
+                </div>
+
+                <div class="person">
+                    <img src="img/driver.jpg" alt="">
+                    <div class="name">Adam Driver</div>
+                </div>
+
+                <div class="person">
+                    <img src="img/ridley.jpg" alt="">
+                    <div class="name">Daisy Ridley</div>
+                </div>
+
+                <div class="person">
+                    <img src="img/boyega.jpg" alt="">
+                    <div class="name">John Boyega</div>
+                </div>
+
+                <div class="person">
+                    <img src="img/isaac.jpg" alt="">
+                    <div class="name">Oscar Isaac</div>
+                </div>
+
+                <div class="person">
+                    <img src="img/serkis.jpg" alt="">
+                    <div class="name">Andy Serkis</div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="gallery">
+
+        <h2>Gallery</h2>
+
+        <div>
+
+            <a href="#" class="left icon-left-open"></a>
+
+            <a href="#" class="right icon-right-open"></a>
+
+        </div>
+
+    </section>
     
-                    <div class="scorecontainer pagecontent">
-                        <div class="score">90%</div>
-                        <div class="scoreban rotten"></div>
-                        <div class="scoreweb">Rottentomatoes.com</div>
-                    </div>
-    
-                    <div class="scorecontainer pagecontent">
-                        <div class="score">85%</div>
-                        <div class="scoreban meta"></div>
-                        <div class="scoreweb">metacritic.com</div>
-                    </div>
-                </div>
-
-        </section>
-
-        <!-- Cast page -->
-
-        <section class="cast" id="cast">
-            <div class="pagename">
-                    <h2>
-                        Cast
-                    </h2>
-                </div>
-
-                <div class="content">
-                    <div class="Mark">
-                        <div><img src="img/hamill.jpg" alt="hamilprofile"></div>
-                        <div class="marktext">
-                            <div>
-                                <h4>
-                                    Mark Hamill
-                                </h4>
-                            </div>
-    
-                            <div>
-                                <p>
-                                    Mark Hamill is best known for his portrayal of Luke Skywalker in the original Star Wars trilogy - Hvězdné války (1977), Star Wars: Epizoda V - Impérium vrací úder (1980), and Star Wars: Epizoda VI - Návrat Jediho (1983) - a role he reprised in Star Wars: Sila se probouzi (2015) and Star Wars: Poslední z Jediu (2017). He also starred and co-starred in the films Corvette Summer (1978), Velká červená jednička (1980), and Kingsman: The Secret Service (2014). Hamill's extensive voice acting work includes a long-standing role as the Joker, commencing with Batman (1992).
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-        </section>
-
-        <!-- Gallery page -->
-
-        <section class="gallery" id="gallery">
-            <div class="pagename">
-                    <h2>
-                        Gallery
-                    </h2>
-                </div>
-
-                <div class="gallerypic">
-                    <div class="galleryicons">
-                        <div>
-                            <span>&lt;</span>
-                        </div>
-    
-                        <div>
-                            <span>&gt;</span>
-                        </div>
-    
-                    </div>
-                </div>
-
-        </section>
-
-    </main>
-
-    <footer></footer>
 </body>
 </html>
