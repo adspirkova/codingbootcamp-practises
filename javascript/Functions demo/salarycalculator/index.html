@@ -1,0 +1,34 @@
+<!-- Create an HTML page with a form where the user can enter their 
+    - hourly pay, 
+    - how many hours a day they work 
+    - for how many days a month.
+When the user clicks a button the page will compute the salary and display it in big bold letter.
+Play with the design of the page a little so that it looks nice. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div>
+            <form action="">
+                <label for="hourlypay"> Please enter your hourly pay</label>
+                <input type="number" id="hourlypay">
+                <label for="hoursperday"> Please enter how many hours a day you work</label>
+                <input type="number" id="hoursperday">
+                <label for="dayspermonth"> Please enter how many days per month do you work</label>
+                <input type="number" id="dayspermonth">
+                
+            </form>
+            <button onclick="salary()">Submit</button>
+            <p>Your salary is : <span>...</span> </p> 
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
