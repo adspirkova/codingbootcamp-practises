@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+    background-color: deepskyblue;
+    transition: 2s;
+    
+}
+
+
+.switch {
+    opacity: 0;
+    transform: rotate(45deg);
+}
