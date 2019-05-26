@@ -1,18 +1,48 @@
-'use strict';
 
-console.log('It works!');
 
-let result = 0;
+let result = null;
 let operation = null;
+let memory = 0;
+
 
 const updateResult = () => {
   const resultElm = document.querySelector('.calc__result');
   resultElm.textContent = result;
 }
 
+const updateMemory = () => {
+  const memoryElm = document.querySelector('.calc__result');
+  memory = parseInt(memoryElm.textContent)
+  console.log(memory);
+}
+
 const clearInput = () => {
   const inputElm = document.querySelector('.calc__input');
   inputElm.value = '0';
+}
+
+const clearMemory = () => {
+  memory = 0;
+}
+
+const plusMemory = () => {
+  const inputElm = document.querySelector('.calc__input');
+  const number = parseFloat(inputElm.value);
+  memory += number;
+  result = memory;
+  updateResult();
+  updateMemory();
+  clearInput();
+}
+
+const minusMemory = () => {
+  const inputElm = document.querySelector('.calc__input');
+  const number = parseFloat(inputElm.value);
+  memory -= number;
+  result = memory
+  updateResult();
+  updateMemory();
+  clearInput();
 }
 
 // Operations 
@@ -44,7 +74,7 @@ const clear = () => {
 
 const equals = () => {
   const inputElm = document.querySelector('.calc__input');
-  const number = parseInt(inputElm.value);
+  const number = parseFloat(inputElm.value);
 
   switch(operation) {
     case '+':
@@ -69,14 +99,18 @@ const equals = () => {
   operation = null;
 }
 
-const onDigit = (event) => {
-    console.log(event.target.textContent)
+const graphicalkeyboard = (btn) => {
+  let numkeybElm = document.querySelector(btn);
+  let grapnumber = numkeybElm.value;
+
+  let inputElm = document.querySelector('.calc__input');
+  console.log(inputElm.value);
+  inputElm.value += grapnumber;
+  
 }
 
-for (let i=0; i<10; i++) {
-    const btn = document.querySelector('#btn-equals');
-    btn.addEventListener('click', onDigit);
-}
+
+
 
 // DOM CONTENT LOADER
 document.addEventListener('DOMContentLoaded', () => {
@@ -98,79 +132,49 @@ document.addEventListener('DOMContentLoaded', () => {
   const btnEquals = document.querySelector('#btn-equals');
   btnEquals.addEventListener('click', equals);
 
+
+  const btnzero = document.querySelector('#btn-0');
+  btnzero.addEventListener('click', ()=>{graphicalkeyboard('#btn-0')});
+
+  const btnone = document.querySelector('#btn-1');
+  btnone.addEventListener('click', ()=>{graphicalkeyboard('#btn-1')});
+
+  const btntwo = document.querySelector('#btn-2');
+  btntwo.addEventListener('click', ()=>{graphicalkeyboard('#btn-2')});
+
+  const btnthree = document.querySelector('#btn-3');
+  btnthree.addEventListener('click', ()=>{graphicalkeyboard('#btn-3')});
+
+  const btnfour = document.querySelector('#btn-4');
+  btnfour.addEventListener('click', ()=>{graphicalkeyboard('#btn-4')});
+
+  const btnfive = document.querySelector('#btn-5');
+  btnfive.addEventListener('click', ()=>{graphicalkeyboard('#btn-5')});
+
+  const btnsix = document.querySelector('#btn-6');
+  btnsix.addEventListener('click', ()=>{graphicalkeyboard('#btn-6')});
+
+  const btnseven = document.querySelector('#btn-7');
+  btnseven.addEventListener('click', ()=>{graphicalkeyboard('#btn-7')});
+  
+  const btneight = document.querySelector('#btn-8');
+  btneight.addEventListener('click', ()=>{graphicalkeyboard('#btn-8')});
+
+  const btnnine = document.querySelector('#btn-9');
+  btnnine.addEventListener('click', ()=>{graphicalkeyboard('#btn-9')});
+
+  const btncomma = document.querySelector('#btn-comma');
+  btncomma.addEventListener('click', ()=>{graphicalkeyboard('#btn-comma')});
+
+  const btnmemplus = document.querySelector('#btn-memory-plus');
+  btnmemplus.addEventListener('click', plusMemory);
+
+  const btnmemc = document.querySelector('#btn-memory-c');
+  btnmemc.addEventListener('click', clearMemory);
+
+  const btnmem = document.querySelector('#btn-memory');
+  btnmem.addEventListener('click', updateMemory);
+
+  const btnmemminus = document.querySelector('#btn-memory-minus');
+  btnmemminus.addEventListener('click', minusMemory);
 });
-
-
-
-
-
-
-/* const graphicalkeyboard = () => {
-    const numkeybElm = document.querySelector('.calc__num');
-    const gnumber = parseInt(numkeybElm.value);
-    console.log('It is not working!');
-    switch(gnumber) {
-        case 1:
-          result = 1;
-          break;
-        case 2:
-          result -= number;
-          break;
-        case 3:
-          result *= number;
-          break;
-        case 4:
-          result /= number;
-          break;
-        case 5:
-          result /= number;
-          break;
-        case 6:
-          result /= number;
-          break;
-        case 7:
-          result /= number;
-          break;
-        case 8:
-          result /= number;
-          break;
-        case 9:
-          result /= number;
-          break;
-        default:
-          result = number;
-          break;
-      }
-      updateResult();
-}
-
-const btnNo = document.querySelector('#btn-num0');
-btnNo.addEventListener('click', graphicalkeyboard);
-
-const btnNo1 = document.querySelector('#btn-num1');
-btnNo1.addEventListener('click', graphicalkeyboard);
-
-const btnNo2 = document.querySelector('#btn-num2');
-btnNo2.addEventListener('click', graphicalkeyboard);
-
-const btnNo3 = document.querySelector('#btn-num3');
-btnNo3.addEventListener('click', graphicalkeyboard);
-
-const btnNo4 = document.querySelector('#btn-num4');
-btnNo4.addEventListener('click', graphicalkeyboard);
-
-const btnNo5 = document.querySelector('#btn-num5');
-btnNo5.addEventListener('click', graphicalkeyboard);
-
-const btnNo6 = document.querySelector('#btn-num6');
-btnNo6.addEventListener('click', graphicalkeyboard);
-
-const btnNo7 = document.querySelector('#btn-num7');
-btnNo7.addEventListener('click', graphicalkeyboard);
-
-const btnNo8 = document.querySelector('#btn-num8');
-btnNo8.addEventListener('click', graphicalkeyboard);
-
-const btnNo9 = document.querySelector('#btn-num9');
-btnNo9.addEventListener('click', graphicalkeyboard);
- */
