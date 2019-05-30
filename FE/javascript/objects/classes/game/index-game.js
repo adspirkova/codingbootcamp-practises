@@ -12,6 +12,7 @@ const chip3 = new Chips (5, 'red', '16em', '19em');
 chip.mount(game1.element);
 chip2.mount(game1.element);
 chip3.mount(game1.element);
+
 })
 
 

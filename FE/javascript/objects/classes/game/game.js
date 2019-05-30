@@ -25,8 +25,8 @@ class Game {
     
     update() {
         this.score;
-        /* this.score += this.numbers; */
         console.log(this.score);
+        /* this.score += this.numbers; */
         this.element.querySelector('.score').textContent = `Score: ${this.score}`;
     }
 
