@@ -1,0 +1,55 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Use class */
+.navbar {
+    background-color: navy;
+    color: white;
+    display: flex;
+    flex: 0 0 auto; /* MAKES THE MENU SHRINK */
+    width: 300px;
+    transition: 600ms;
+    overflow: hidden;
+    padding: 0;
+    min-height: 100%;
+}
+.article {
+    padding: 3rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    padding: 8px;
+}
+
+.sidebar {
+    flex: 0 0 50px;
+}
+
+.menubar{
+    flex: 0 0 250px;
+}
+
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 2rem;
+}
+
+.hide {
+    width: 50px;
+}
