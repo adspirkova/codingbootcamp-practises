@@ -1,0 +1,38 @@
+*  {
+    box-sizing: border-box;
+
+}
+html {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 48px; 
+    color: #FFFFFF;
+}
+
+body {
+    margin: 0;
+    background-color: #FFFFFF;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    height: 100%; 
+    padding: 1rem;
+    background-image: url('img/bg.svg');
+    display: block; 
+    background-size: cover; /* does not repeat picture */
+    
+  }
+
+.product {
+    padding: 6em; /* moves the object from sites */
+    max-width: 60%;  /* alignts it  to more lines */
+
+}
+/* moving the object on the page */
+img  { 
+    position: absolute; 
+    left: 35em;
+    top: 7em; 
+    height: 22em;/* makes it bigger */
+}

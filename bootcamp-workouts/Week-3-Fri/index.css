@@ -1,0 +1,22 @@
+html {
+    width: 100vw;
+    height: 100vh;
+    color: black;
+}
+
+div {
+    background-image: url('padlock.png');
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20em;
+    height: 20em;
+}
+
+.show {
+    opacity: 1;
+}
+
+.hide {
+    opacity:0;
+}
