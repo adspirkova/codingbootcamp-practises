@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <form action="">
+                <label for="accountnumber"> Please type in your account number here:</label>
+                <input type="number" id="accountnumber">
+            </form>
+            
+            <select id="userAction">
+                    <option value="balance">balance</option>
+                    <option  value="withdraw">withdraw</option>
+                  </select>
+             <button onclick="banking()">Submit</button>
+             <p id="balancedisplayed"></p>
+             <p class="hide" id="tobehiden">Amount to withdraw: <input type="number" id="withdrawamount">
+                <button onclick="withdrawal()">Submit value</button></p>
+    <script src="index.js"></script>
+</body>
+</html>
