@@ -28,5 +28,9 @@ class Car extends Vehicle
 }
 
 
+$mustang = new Car;
+$mustang -> change_color("blue");
+
+// var_dump($mustang);
 
 ?>

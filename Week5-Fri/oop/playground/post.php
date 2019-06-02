@@ -41,6 +41,7 @@ $total_posts = 0;
 $first_post = new BlogPost(3, 'The first post');
 $second_post = new BlogPost(3, 'The second post');
 
+
 //$first_post -> id = 1;
 $first_post -> headline = 'The first post';
 $first_post -> text = 'I have decided to write my own blog. This is my first post, beautiful in it\'s simplicity.';
@@ -51,7 +52,7 @@ $first_post -> status = 'published';
 $second_post -> publish();
 var_dump($first_post);
 var_dump($second_post);
-
+var_dump($total_posts);
 ?>
 
 <!DOCTYPE html>
