@@ -5,8 +5,11 @@
 
 $projects = [
     'http://www.cbp-exercises.test:8080/' => 'Root folder for exercise',
+    'http://www.solutions.test:8080/'        => 'CBP Solutions',
+    'http://www.laravel.test:8080/'      => 'Laravel',
     'http://www.my-portfolio.test:8080/'  => 'My portfolio',
-    'http://www.stackoverflow.com'        => 'Stack Overflow'
+    'http://www.stackoverflow.com'        => 'Stack Overflow',
+    
 ];
 //all data is ready, le§s present it
 

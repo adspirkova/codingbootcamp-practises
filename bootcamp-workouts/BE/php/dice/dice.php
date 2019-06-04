@@ -1,38 +1,60 @@
 <?php
 class Dice 
+{  
+    public $sides = 6;
+
+    public function __construct($sides)
+    {
+        $this -> sides = $sides ;
+    }
+    public function roll($sides)
+    {
+        return rand(1,$sides);
+    }
+    // public function __toString()
+    // {
+    //     echo implode(',',sides);
+    // }
+
+}
+
+
+class Dice6 extends Dice
 {
-   public $sides = [
-    4,
-    6,
-    10,
-    20
-    ];
-
-   public function __construct($sides)
-   {
-       $this -> sides = $sides ;
-   }
-   
-   public function roll($sides)
-   {
-       return rand(1,$sides);
-   }
-
-   public function __toString()
-   {
-        echo implode(',',sides);
-   }
+    public $sides = 6;
+    public function __changeside($sides)
+    {
+        $this -> sides = $sides ;
+    }
+}
+class Dice4 extends Dice
+{
+    public $sides = 4;
+    public function __changeside($sides)
+    {
+        $this -> sides = $sides ;
+    }
+}
+class Dice10 extends Dice
+{
+    public $sides = 10;
+    public function __changeside($sides)
+    {
+        $this -> sides = $sides ;
+    }
+}
+class Dice20 extends Dice
+{
+    public $sides = 20;
+    public function __changeside($sides)
+    {
+        $this -> sides = $sides ;
+    }
 }
 
 $number = 1;
 
-
-$sides = [
-    4,
-    6,
-    10,
-    20
-];
+$sides = 6;
 
 
 
@@ -41,8 +63,23 @@ if ($_POST) {
     $sides = isset($_POST['sides']) ? $_POST['sides'] : $sides;
     for ($i = 0; $i < $number; $i++){
         $dice = new Dice($sides);
-        $dice -> roll($sides);        
-    }
+        // switch ($sides) {
+        //     case 4:
+        //         return $dice = new Dice4($sides);
+        //         break;
+        //     case 10:
+        //         return $dice = new Dice10($sides);
+        //         break;
+        //     case 20:
+        //         return $dice = new Dice20($sides);
+        //         break;
+        //     case 6:
+        //     default:
+        //         return $dice = new Dice6($sides);
+        //         break; 
+        // }
+        $dice -> roll($sides);     
+    };
 }
 
 
@@ -89,9 +126,11 @@ var_dump($number);
    <div>
     <label for=""></label>
     <select name="sides">
-        <?php for ($i = 0; $i < ($dice -> sides ); $i++):?>
-        <option value="<?= $dice -> sides?>"><?= $dice -> sides?></option>
-        <?php endfor; ?>
+        <option value="4"<?= $sides == 4 ? ' selected' : '' ?>>4</option>
+        <option value="6"<?= $sides == 6 ? ' selected' : '' ?>>6</option>
+        <option value="8"<?= $sides == 8 ? ' selected' : '' ?>>8</option>
+        <option value="10"<?= $sides == 10 ? ' selected' : '' ?>>10</option>
+        <option value="20"<?= $sides == 20 ? ' selected' : '' ?>>20</option>
     </select>
     </div> 
     <div>

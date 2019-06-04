@@ -1,0 +1,12 @@
+{
+    "name": "adelaspirkova/composer-project",
+    "authors": [
+        {
+            "name": "Adela Spirkova",
+            "email": "ad.spirkova@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    }
+}
