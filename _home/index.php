@@ -7,6 +7,8 @@ $projects = [
     'http://www.cbp-exercises.test:8080/' => 'Root folder for exercise',
     'http://www.solutions.test:8080/'        => 'CBP Solutions',
     'http://www.laravel.test:8080/'      => 'Laravel',
+    'http://www.laravel.test-2:8080/'      => 'Laravel-test2',
+    'http://www.jukebox.test:8080/'      => 'Jukebox',
     'http://www.my-portfolio.test:8080/'  => 'My portfolio',
     'http://www.stackoverflow.com'        => 'Stack Overflow',
     

@@ -7,21 +7,11 @@
     <title>Movie database</title>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=latin-ext" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/BE/laravel/public/css/main.css">
 </head>
 <body>
     <div id="page">
-        <header>
-        <?= $header?>
-        </header>
-    
-       <main>
-       <?= $list?>
-       <?= $venom?>
-       </main>
-        <footer>
-        <?= $footer?>
-        </footer>
+       <?= $content?>
     </div>
 </body>
 </html>

@@ -15,5 +15,9 @@
 
 // Route::get('/', 'IndexController@index');
 
-Route::get('/home', 'HomeController@show');
+Route::get('/', 'HomeController@show');
 Route::get('/listofmovies', 'MovieListController@show');
+Route::get('/movie_of_week/venom','MovieListController@detail');
+
+Route::get('/regions','RegionController@index');
+Route::get('/western-europe','RegionController@westernEurope');

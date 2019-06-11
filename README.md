@@ -1,1 +1,2 @@
-# codingbootcamp-practises
+# bootcamp-workouts
+Morning workouts

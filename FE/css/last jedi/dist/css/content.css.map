@@ -1,0 +1,1 @@
+{"version":3,"sources":["content.scss"],"names":[],"mappings":"AAAA;EACI,sBAAsB;EACtB,oBAAa;EAAb,oBAAa;EAAb,aAAa;EACb,wBAAuB;EAAvB,qBAAuB;EAAvB,uBAAuB;EACvB,mBAAe;EAAf,eAAe;EACf,gBAAgB,EAAA","file":"content.css","sourcesContent":[".content {\n    padding: 0 10em 0 10em;\n    display: flex;\n    justify-content: center;\n    flex-wrap: wrap;\n    overflow: hidden;\n}\n"]}
