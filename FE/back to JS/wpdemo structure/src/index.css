@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+body {
+  background-color: #ddd;
+  color: #444;
+}
+
+.container {
+  width: 800px;
+  margin: 1rem auto;
+}
+

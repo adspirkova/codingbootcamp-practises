@@ -1,0 +1,24 @@
+.question {
+    display: flex;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    background-color: white;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.votes {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+}
+
+.counter {
+  font-size: 2rem;
+  padding: 1rem;
+}
+  

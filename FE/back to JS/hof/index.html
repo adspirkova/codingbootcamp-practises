@@ -1,0 +1,56 @@
+<script>
+
+const values = [13.5, 12.1, 10.9, 16.3, 12.3, 11.4];
+
+
+// *** MAP ***
+const results = values.map(val => Math.round(val));
+
+console.log(results);
+
+
+// *** FILTER  ***
+
+const resultes = values.filter(val =>  val > 13);
+
+// resultes = values.filter(val => {return val > 13; });
+
+console.log(resultes);
+
+
+// *** REDUCE  = SUMS up numbers in an array***
+
+
+const cool = [2, 4, 3, 1]
+const resultRed = cool.reduce((x,y) => x * y, 5);
+
+
+console.log(resultRed);
+
+
+// *** for loop ***
+const result =[];
+
+for (const val of values) {
+    result.push(Math.round(val));
+}
+
+console.log(result);
+
+
+// *** FOREACH ***
+const result2 =[];
+
+values.forEach(val => {
+    result2.push(Math.round(val));
+});
+
+console.log(result2);
+
+
+// *** HELLO ***
+const hello = () => console.log('hello');
+
+
+setTimeout(hello, 5000);
+</script>

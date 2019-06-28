@@ -67,3 +67,27 @@ FROM `countrylanguage`
 LEFT JOIN `country`
         ON `countrylanguage`.`CountryCode` = `country`.`Code`
 WHERE `countrylanguage`.`Language` = 'English'
+
+EXPLAIN 
+SELECT *
+FROM `paragraphs`
+WHERE `id` = 1337
+
+EXPLAIN 
+SELECT *
+FROM `words`
+WHERE `word` = 'kissed'
+
+
+INSERT 
+INTO `words`
+(`words`)
+VALUES 
+('February')
+
+
+SELECT *,
+    MATCH(`text`) AGAINST ('Edmond Dantès')
+FROM `paragraphs`
+WHERE MATCH(`text`) AGAINST ('Edmond Dantès');
+

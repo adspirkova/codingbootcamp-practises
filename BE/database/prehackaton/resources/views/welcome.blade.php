@@ -83,6 +83,15 @@
                 <div class="title m-b-md">
                     Laravel
                 </div>
+                @if(\Auth::check())
+                <div>
+                    Hey, you are authentificated, {{\Auth::user()->name}}
+                </div>
+                @else
+                <div>
+                    Hey, you should register.
+                </div>
+                @endif
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Docs</a>

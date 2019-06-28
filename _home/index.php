@@ -8,9 +8,16 @@ $projects = [
     'http://www.solutions.test:8080/'        => 'CBP Solutions',
     'http://www.laravel.test:8080/'      => 'Laravel',
     'http://www.laravel.test-2:8080/'      => 'Laravel-test2',
+    'http://www.polls.localhost:8080/'      => 'Polls',
     'http://www.jukebox.test:8080/'      => 'Jukebox',
+    'http://www.library.localhost:8080/'        => 'Books Library',
+    'http://www.laravel-qa.localhost:8080/'      => 'Prehackaton',
+    'http://www.minihackaton.localhost:8080/home'      => 'Zomato',
     'http://www.my-portfolio.test:8080/'  => 'My portfolio',
     'http://www.stackoverflow.com'        => 'Stack Overflow',
+    'http://www.recycling-bins.localhost:8080/'        => 'Recycling bins',
+    'http://www.laravel-test.localhost:8080/'        => 'Laravel test',
+    
     
 ];
 //all data is ready, le§s present it
@@ -25,11 +32,12 @@ $projects = [
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Morning sweetheart!</h1>
+    <h1 class="jumbotron">Morning sweetheart!</h1>
 
-    <ul>
+    <ul class="list-group with badges container">
         <?php foreach ($projects as $url => $name) :?>
         
         <li>
