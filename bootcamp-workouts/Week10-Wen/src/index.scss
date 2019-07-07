@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: 16px;
+  background-color: aliceblue;
+}
+
+.container {
+  display: flex;
+  margin: 4px;
+}
+
+.day {
+  background-color: aquamarine;
+  color: white;
+  height: 80px;
+  width: 80px;
+  text-align: center;
+}
+
+.day-finished {
+  background-color: orange;
+  color: white;
+  height: 80px;
+  width: 80px;
+  text-align: center;
+}
+
+.lesson {
+  background-color: white;
+  padding: 2px;
+  color: dimgray;
+}
+

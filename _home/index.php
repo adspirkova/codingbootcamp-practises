@@ -5,6 +5,7 @@
 
 $projects = [
     'http://www.cbp-exercises.test:8080/' => 'Root folder for exercise',
+    'http://www.react-laravel.localhost:8080/' => 'L&R',
     'http://www.solutions.test:8080/'        => 'CBP Solutions',
     'http://www.laravel.test:8080/'      => 'Laravel',
     'http://www.laravel.test-2:8080/'      => 'Laravel-test2',
@@ -17,6 +18,7 @@ $projects = [
     'http://www.stackoverflow.com'        => 'Stack Overflow',
     'http://www.recycling-bins.localhost:8080/'        => 'Recycling bins',
     'http://www.laravel-test.localhost:8080/'        => 'Laravel test',
+    'http://www.php-intro.test:8080/'        => 'PHP INTRODUCTION',
     
     
 ];
@@ -40,7 +42,7 @@ $projects = [
     <ul class="list-group with badges container">
         <?php foreach ($projects as $url => $name) :?>
         
-        <li>
+        <li class="list-group-item list-group-item-secondary">
             <a href="<?= $url ?>"><?= $name ?></a>
         </li>
         <?php endforeach; ?>

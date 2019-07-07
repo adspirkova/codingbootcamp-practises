@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body,
+#container,
+.app,
+.text {
+    margin: 2em;
+    border: 2px solid #000000;
+    color: #000000;
+    position: relative;
+}
+body::before,
+#container::before {
+    content: "body";
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0.25em;
+    visibility: hidden;
+}
+body:hover::before,
+#container:hover::before {
+    visibility: visible;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    border-color: #999999;
+    color: #999999;
+}
+body::before {
+    content: "body";
+}
+
+#container {
+    border-color: green;
+    color: green;
+    min-height: 10em;
+}
+#container::before {
+    content: "#container";
+}
+
+.app {
+    border-color: red;
+    color: red;
+    padding: 2em;
+}
+
+.text {
+    padding: 2em;
+    margin: 2em 0 0;
+}
